@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .animate {
+        animation-name: entry;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0s;
+        animation-direction: alternate;
+        animation-iteration-count: 1;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+
+    @keyframes entry {
+        0% {
+            opacity: 0;
+            transform: translateY(-10);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .delay25 {
+        animation-name: del25;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.25s;
+        animation-direction: alternate;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-play-state: running;
+    }
+
+    @keyframes del25 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .delay50 {
+        animation-name: del50;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-play-state: running;
+    }
+
+    @keyframes del50 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .delay75 {
+        animation-name: headerone;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.75s;
+        animation-direction: alternate;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-play-state: running;
+    }
+
+    @keyframes headerone {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
