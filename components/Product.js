@@ -4,7 +4,7 @@ import Image from "next/image";
 /*
 lg:hover:transform lg:hover:scale-150
 */
-const Product = ({ _id, name, price, picture }) => {
+const Product = ({ _id, name, picture, description }) => {
   const { setSelectedProducts } = useContext(ProductsContext);
   function addProduct() {
     setSelectedProducts((prev) => [...prev, _id]);
@@ -22,9 +22,7 @@ const Product = ({ _id, name, price, picture }) => {
       </div>
       <div className="mt-1">
         <h3 className="font-bold text-lg capitalize text-center">{name}</h3>
-        <h3 className="text-lg capitalize text-center">
-          {price?.toFixed(3)} VNĐ
-        </h3>
+        <h3 className="text-lg capitalize text-center">{description} VNĐ</h3>
       </div>
     </div>
   );
